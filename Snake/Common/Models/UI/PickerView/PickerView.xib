@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickerView" customModule="Snake" customModuleProvider="target">
+            <connections>
+                <outlet property="firstButton" destination="1wv-zV-ajz" id="xyo-S8-3tl"/>
+                <outlet property="secondButton" destination="KpC-ir-rNd" id="Yvz-9d-rRI"/>
+                <outlet property="thirdButton" destination="LwG-QK-HSz" id="fUG-0a-iIR"/>
+                <outlet property="titleLabel" destination="Ff7-9K-5HC" id="g8C-YU-8Rc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="209"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ykX-qP-lhP">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="209"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose game speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ff7-9K-5HC">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="25.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LAG-2b-tnP">
+                            <rect key="frame" x="0.0" y="35.5" width="414" height="173.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wv-zV-ajz" customClass="SnakeButton" customModule="Snake" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="131.5" height="173.5"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Slow"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpC-ir-rNd" customClass="SnakeButton" customModule="Snake" customModuleProvider="target">
+                                    <rect key="frame" x="141.5" y="0.0" width="131" height="173.5"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Normal"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LwG-QK-HSz" customClass="SnakeButton" customModule="Snake" customModuleProvider="target">
+                                    <rect key="frame" x="282.5" y="0.0" width="131.5" height="173.5"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Fast"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="ykX-qP-lhP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1SB-S1-JfF"/>
+                <constraint firstItem="ykX-qP-lhP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CxJ-MB-qRO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ykX-qP-lhP" secondAttribute="bottom" id="W9x-OU-Mth"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ykX-qP-lhP" secondAttribute="trailing" id="oZW-ua-eyl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-191.30434782608697" y="214.62053571428569"/>
+        </view>
+    </objects>
+</document>
